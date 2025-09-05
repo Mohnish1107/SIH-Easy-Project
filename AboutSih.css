@@ -1,0 +1,28 @@
+.hero-section{
+    background-image:url("alumni-img.jpg");
+    object-fit: fill;
+    height: 400px;
+    width:1500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-message{
+   /* text-align: end;*/
+   background-color: black;
+   color: white;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-size: 0.85rem;
+   width: 80%;
+   margin-bottom: 0px;
+}
+.hero-message:hover{
+    border:3px solid orangered;
+}
+.hero-message a{
+    color: #007199;
+}
