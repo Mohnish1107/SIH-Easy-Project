@@ -1,72 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alumni Connect</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alumni Connect</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1a1a1a;
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        /* border: 1px solid red; */
+        background-color: #f8f9fa;
+        padding: 10px;
+      }
 
-  <header>
-    <div class="container nav">
-      <h1 class="logo">AlumniConnect</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Mentorship</a></li>
-          <li><a href="#">Donate</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn">Login</a>
-    </div>
-  </header>
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      nav li {
+        display: inline;
+      }
 
-  <section class="hero">
-    <div class="container">
-      <h2>Stay Connected, Give Back</h2>
-      <p>
-        Join a growing alumni community – connect with peers, mentor students,
-        and contribute to your institution’s success.
-      </p>
-      <div class="actions">
-        <a href="#" class="btn primary">Join Now</a>
-        <a href="#" class="btn secondary">Learn More</a>
+      nav a {
+        text-decoration: none;
+        color: #0b0b0b;
+        padding: 5px 15px;
+        position: relative;
+      }
+      
+      nav a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #0a65c7;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      nav a:hover::after {
+        transform: scaleX(1);
+      }
+      nav .Login {
+        background-color: #254bf6;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-nav">
+        <h1 class="logo">AlumniConnect</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Mentorship</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><button class="Login">Login</button></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="features">
-    <div class="container">
-      <h2>What You Can Do</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Networking</h3>
-          <p>Meet and connect with alumni across the globe.</p>
-        </div>
-        <div class="card">
-          <h3>Mentorship</h3>
-          <p>Share your experience and guide current students.</p>
-        </div>
-        <div class="card">
-          <h3>Events</h3>
-          <p>Stay in the loop with reunions, webinars, and meetups.</p>
-        </div>
-        <div class="card">
-          <h3>Fundraising</h3>
-          <p>Support initiatives that make a difference at your alma mater.</p>
+    <section class="hero">
+      <div class="container">
+        <h2>Stay Connected, Give Back</h2>
+        <p>
+          Join a growing alumni community – connect with peers, mentor students,
+          and contribute to your institution’s success.
+        </p>
+        <div class="actions">
+          <a href="#" class="btn primary">Join Now</a>
+          <a href="#" class="btn secondary">Learn More</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 AlumniConnect. All rights reserved.</p>
-    </div>
-  </footer>
+    <section class="features">
+      <div class="container">
+        <h2>What You Can Do</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Networking</h3>
+            <p>Meet and connect with alumni across the globe.</p>
+          </div>
+          <div class="card">
+            <h3>Mentorship</h3>
+            <p>Share your experience and guide current students.</p>
+          </div>
+          <div class="card">
+            <h3>Events</h3>
+            <p>Stay in the loop with reunions, webinars, and meetups.</p>
+          </div>
+          <div class="card">
+            <h3>Fundraising</h3>
+            <p>
+              Support initiatives that make a difference at your alma mater.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 AlumniConnect. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
