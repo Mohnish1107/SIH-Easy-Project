@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color:  #00b4d8;
+      min-height:100vh;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+   width: 100%; 
+   max-width:380px;
+   
+
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    h2{
+      color:#333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form{
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    label{
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .required {
+      color: red;
+    }
+    input{
+     padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .forgot{
+      font-size: 13px;
+      color: #2a64f6;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .forgot:hover{
+      text-decoration: underline;
+    }
+    .login-btn{
+      background-color: #999;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .login-btn:hover{
+      background-color: #666;
+    }
+    .btn{
+      display: flex;
+      align-items: center;
+     justify-content: center;
+     padding: 10px;
+     gap: 10px;
+     border-radius: 6px;
+   font-size: 14px;
+     cursor: pointer;
+      border: 1px solid #ddd;
+     background: white;
+      transition: background 0.2s ease;
+    }
+    .btn:hover{
+      background-color: #f0f0f0;
+    }
+
+     .google { color: #db4437; }
+    .facebook { color: #1877f2; }
+    .apple { color: #000; }
+    .microsoft { color: #f25022; }
+    .clever { color: #2a64f6; }
+
+    .footer{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer a{
+      color: #2a64f6;
+      text-decoration: none;
+    }
+    .footer a:hover{
+      text-decoration: underline;
+    } 
+
+    .remember{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+    gap: 6px; 
+    }
+    .remember label{
+      font-size: 0.95rem;
+  color: #333; 
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Log in</h2>
+
+    <form class="form">
+      <p><span class="required">*</span> indicates a required field.</p>
+
+      <label>Email or username <span class="required">*</span></label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Password <span class="required">*</span></label>
+      <input type="password" placeholder="Enter your password" required>
+      
+      <label>Role <span class="required">*</span></label>
+      <select>
+          <option value="">--Please choose an option--</option>
+        <option value="Student">Student</option>
+        <option value="Administrator">Administrator</option>
+        <option value="Alumini">Alumini</option>
+      </select>
+      <div class="remember">
+  <input type="checkbox" id="remember" name="remember">
+  <label for="remember">Remember Me</label>
+</div>
+    <a href="https://accounts.google.com/signin/recovery" class="forgot">Forgot password?</a>
+
+      <button type="submit" class="login-btn">Log in</button>
+
+      
+     
+      <button type="button" class="btn google"><i class="fa-brands fa-google"></i> Continue with Google</button>
+      <button type="button" class="btn facebook"><i class="fa-brands fa-facebook"></i> Continue with Facebook</button>
+      <button type="button" class="btn microsoft"><i class="fa-brands fa-microsoft"></i> Continue with Microsoft</button>
+    </form>
+
+    <div class="footer">
+      Need an Alumni Association account? <a href="signup.html">Create an account</a>
+    </div>
+  </div>
+</body>
+</html>
