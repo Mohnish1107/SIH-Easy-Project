@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="AboutSih.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .hero-section{
+    background-image:url("alumni-img.jpg");
+    object-fit: fill;
+    height: 400px;
+    width:1500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-message{
+   /* text-align: end;*/
+   background-color: black;
+   color: white;
+   height: 40px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-size: 0.85rem;
+   width: 80%;
+   margin-bottom: 0px;
+}
+.hero-message:hover{
+    border:3px solid orangered;
+}
+.hero-message a{
+    color: #007199;
+}
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display:flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;/*vertically centre me lane ke liye*/
+
+}
+.panel-option p{
+    display: inline;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+.panel-option{
+    width: 70%;font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;/*bold ke liye*/
+}
+    </style>
 </head>
 <body>
+    <header>
+      <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-option">
+                <p>Objective & Activities</p>
+                <p>Student interaction</p>
+                <p>Alumni Chapters</p>
+                <p>Past Members</p>
+                <p>Connections</p>
+                <p>Mentors</p>
+                <p>Advisors</p>
+            </div>
+            <div class="panel-deals">
+                Please Connect by loging it
+            </div>
+        </div>
+    </header>
     <div class="hero-section">
         <div class="hero-message">
             <p>We believe graduation is not the end of journey, but start of lifelong bond.Our Alumni are our pride,our strength and our inspiration.<a>Click here to become a part of our Alumni Family</a> </p>
